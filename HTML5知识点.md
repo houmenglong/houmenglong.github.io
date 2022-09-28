@@ -1,5 +1,3 @@
-视频地址：https://www.bilibili.com/video/BV1Bt4y1Q72x?spm_id_from=333.999.0.0
-
 # HTML5 知识点
 
 
