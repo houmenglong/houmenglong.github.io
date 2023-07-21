@@ -1,0 +1,440 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	font-family: "Microsoft Yahei";
+	color: #333;
+	background: #fff;
+}
+
+ol,
+ul,
+li {
+	list-style: none;
+	list-style-image: none;
+	list-style-type: none;
+	padding: 0;
+}
+
+a:hover {
+	text-decoration: none;
+	color: inherit;
+}
+
+a {
+	color: inherit;
+}
+
+h4 {
+	font-size: 16px;
+	margin: 0;
+}
+
+h3 {
+	margin-top: 0;
+}
+
+.orange {
+	color: #ea5504;
+	margin-bottom: 50px;
+}
+
+.logo-title {
+	display: inline-flex;
+	align-items: flex-end;
+}
+
+.title {
+	color: #fff;
+	font-size: 20px;
+}
+
+.en-title {
+	font-size: 15px;
+	font-family: 'Courier New', Courier, monospace;
+}
+
+/*----------------------- 导航栏 -----------------------
+.mod-nav { height:70px; position:fixed; top:0; z-index:1020; background:#22252a; width:100%; border-bottom: 1px rgba(255, 255, 255, 0.15) solid;}
+.mod-nav:hover{ background:#373d41; }
+.mod-nav .logo{ float:left;}
+.mod-nav .logo img { height:62px;}
+.mod-nav .nav-list { float:right; margin:0;}
+.mod-nav .nav-list li { float:left; height:70px; line-height:70px; margin-left:40px;}
+.mod-nav .nav-list li a { color:#fff; font-size:16px;}
+.mod-nav .nav-list li a:hover{ color:#ea5504;}--*/
+
+@media(min-width:768px) {
+	.cznav {
+		height: 70px;
+		background: #22252a;
+		border-bottom: 1px rgba(255, 255, 255, 0.15) solid;
+		color: #fff;
+		font-size: 16px;
+	}
+
+	.cznav:hover {
+		background: #373d41;
+	}
+
+	.cznav .logo img {
+		height: 62px;
+	}
+
+	.cznav .navbar-collapse ul li a,
+	.cznav .navbar-collapse ul li a:focus {
+		padding: 25px 15px;
+		color: #fff;
+	}
+
+	.cznav .navbar-collapse>.navbar-nav>.open>a {
+		color: #ea5504;
+		background-color: transparent;
+	}
+
+	.cznav .navbar-collapse ul li a:hover,
+	.cznav .navbar-collapse .active a,
+	.cznav .navbar-collapse .active a:hover {
+		color: #ea5504;
+		background-color: transparent;
+	}
+
+	.cznav .menu-box {
+		width: 110px;
+		background: #373d41;
+		text-align: center;
+		border: 1px rgba(255, 255, 255, 0.15) solid;
+		border-top: 0;
+		position: relative;
+		top: -1px;
+		display: none;
+	}
+
+	.cznav .navbar-collapse ul li:hover .menu-box {
+		display: block;
+	}
+
+	.cznav .menu-box a {
+		display: block;
+	}
+}
+
+@media(max-width:767px) {
+	.cznav {
+		height: 50px;
+		background: #22252a;
+		border: 0;
+		border-bottom: 1px rgba(255, 255, 255, 0.15) solid;
+		color: #fff;
+		font-size: 16px;
+	}
+
+	.cznav .logo img {
+		margin-left: 15px;
+		height: 45px;
+	}
+
+	.cznav .navbar-collapse {
+		background: rgba(34, 37, 42, 0.95);
+		border: 0;
+		max-height: 100vh;
+		margin-top: 1px;
+	}
+
+	.cznav .navbar-nav {
+		min-height: 100vh;
+	}
+
+	.cznav .navbar-collapse .active a {
+		background-color: transparent;
+	}
+
+	.cznav .navbar-collapse ul li {
+		padding: 0 45px;
+	}
+
+	.cznav .navbar-collapse ul li a,
+	.cznav .navbar-collapse .active a {
+		border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+		color: #fff;
+		padding: 15px 0;
+	}
+
+	.cznav .menu-box a {
+		display: block;
+		margin-left: 30px;
+	}
+
+	/*----------按钮样式------------*/
+	.cznav .navbar-toggle,
+	.cznav .navbar-toggle:hover,
+	.cznav .navbar-toggle:focus {
+		border: 0;
+		background-color: transparent;
+		padding-right: 5px;
+	}
+
+}
+
+/*----------------------- 手机版导航栏 --------------------*/
+
+
+
+/*-------------内页banner--------------------*/
+.newsbanner {
+	height: 300px;
+	margin-top: 0px;
+	position: relative;
+	background: #22252a;
+	color: #fff;
+}
+
+.newsbanner .sologan {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	margin: auto;
+	top: 0;
+	padding-top: 120px;
+}
+
+.newsbanner .sologan h4 {
+	font-size: 18px;
+	margin-top: 15px;
+}
+
+@media(max-width:767px) {
+	.newsbanner {
+		height: 200px;
+		margin-top: 50px;
+	}
+
+	.newsbanner .sologan {
+		text-align: center;
+		margin: auto;
+		top: 0;
+		padding-top: 50px;
+		font-size: 18px;
+	}
+
+	.newsbanner .sologan h1 {
+		font-size: 1.5em;
+	}
+
+	.newsbanner .sologan h4 {
+		font-size: 0.8em;
+		margin-top: 15px;
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-------------foot-------------------*/
+.czfoot {
+	width: 100%;
+	background: #373d41;
+	color: #fff;
+	text-align: center;
+}
+
+.czfoot .foottop {
+	padding: 50px 0;
+	text-align: left;
+}
+
+.czfoot .foottop .row {
+	margin: 0;
+}
+
+.czfoot .company {}
+
+.czfoot .companylogo {
+	height: 63px;
+}
+
+.czfoot .companyul {
+	width: 92%;
+	margin: 0 auto;
+}
+
+.czfoot .companyul>li {
+	padding: 10px 0 10px 0;
+	background-color: inherit;
+	border: 0;
+	border-top: 1px solid #4f4f4f;
+	color: #aeb0b1;
+}
+
+.czfoot .companyul>li:first-child {
+	border-top: 0;
+}
+
+.czfoot .companyul .addres {
+	float: right;
+	width: 88%;
+}
+
+.czfoot h3 {
+	margin-left: 15px;
+	margin-top: 28px;
+	margin-bottom: 2px;
+}
+
+.czfoot .newsul {
+	width: 90%;
+	margin: 0 auto;
+}
+
+.czfoot .newsul>li {
+	height: 90px;
+	padding: 15px 0 15px 0;
+	line-height: 1.5;
+}
+
+.czfoot .news .newsimg {
+	width: 60px;
+	height: 60px;
+	border-radius: 3px;
+	float: left;
+	margin-right: 10px;
+	background-size: cover;
+	background-position: center;
+}
+
+.czfoot .news h5 {
+	margin: 0;
+	font-weight: 400;
+	display: block;
+	color: #fff;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.czfoot .news p {
+	font-size: 12px;
+	margin-top: 8px;
+	margin-bottom: 0;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 2;
+	overflow: hidden;
+}
+
+.czfoot .ysul {
+	padding: 0 15px;
+}
+
+.czfoot .ysspan {
+	border-bottom: 1px solid #4f4f4f;
+}
+
+.czfoot .ysul li {
+	padding: 15px 0 15px 0;
+}
+
+.czfoot .ysul li:nth-child(1) {
+	padding: 13px 0 10px 0;
+}
+
+.czfoot .ysspan span {
+	display: inline-block;
+	margin-top: 2px;
+	margin-right: 5px;
+	margin-bottom: 5px;
+	padding: 5px 10px;
+	border: 1px solid #aeb0b1;
+	border-radius: 4px;
+	font-weight: 100;
+}
+
+.czfoot .code {
+	padding: 15px;
+}
+
+.czfoot .code img {
+	width: 25%;
+}
+
+.czfoot .footbottom {
+	background: #303639;
+	color: #aeb0b1;
+	height: 40px;
+	line-height: 40px;
+	font-size: 12px;
+}
+
+@media(max-width:768px) {
+	.czfoot .foottop {
+		padding: 15px 0;
+	}
+
+	.czfoot h3 {
+		margin: 0;
+		margin-top: 15px;
+	}
+
+	.czfoot .companyul {
+		width: 100%;
+	}
+
+	.czfoot .ysul {
+		padding: 0;
+	}
+
+	.czfoot .ysspan {
+		padding: 0;
+	}
+
+	.czfoot .code {
+		padding: 0;
+	}
+
+	.czfoot .footbottom {
+		height: auto;
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	/*-------------foot-------------------*/

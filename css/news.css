@@ -1,0 +1,40 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+
+.tit { border-bottom:#ddd solid 1px; padding-top:15px;}
+.tit .newscategory >li+li{margin-left:0;}
+.tit .newscategory li >a {padding:10px 30px;border-radius:0;font-size: 16px;}
+.tit .newscategory .active > a,.tit .newscategory .active > a:hover{background:#fff; color:#ea5504; padding:10px 60px; margin-bottom:-1px; border:1px solid #ddd; border-bottom:1px solid #fff; border-radius:0; font-size:16px;font-weight: bold;}
+@media(max-width:767px){
+	.tit .newscategory li {width:33.33333%;}
+	.tit .newscategory li >a {padding:10px 0; text-align:center;}
+	.tit .newscategory .active > a,.tit .newscategory .active > a:hover{padding:10px 15px;}
+}
+
+
+.newslist .newsul { border:#ccc solid 1px; padding:15px; margin:15px 0; position:relative;}
+.newslist .newsul .newsimg {width:100%; height:150px; background-size:cover; background-position:center;}
+.newslist .panel { border:0; box-shadow:0 0 0;}
+.newslist .panel-body {background:inherit;}
+.newslist .panel-footer { color:#666;font-size:1.4rem; line-height:2.1rem; background:inherit; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp:2; overflow: hidden;}
+.newslist h4 {margin-top:0; margin-bottom:0; line-height:1.3; font-weight:bold; font-size:18px;}
+.newslist .panel-footnotes {position:absolute; bottom:15px; right:15px; font-size:12px; color:#999;}
+@media(max-width:767px){
+	.newslist {padding:0; background:#f2f2f2;}
+	.newslist .newsul {border:0; background:#fff; box-shadow:1px 1px 2px #ddd;  margin:0 0 15px 0;}
+	.newslist .newsul .newsimg {height:200px;}
+	.newslist .panel {margin-bottom:0;}
+	.newslist .panel-body {padding:15px 0;}
+	.newslist .panel-footer{padding:0; padding-top:15px; margin-bottom:30px; display:-webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp:3; overflow:hidden;}
+	.newslist .panel-footnotes {right:auto; left:15px;}
+}
+
+.newsview {padding-top:30px; }
+.newsview h2 {line-height:1.5;}
+.newsview h5 {color:#999;}
+.newsview .cont {line-height:2; margin-top:30px; padding-top:25px; border-top:1px solid #ddd; font-size:16px;}
+.newsview .cont img {max-width:100%; margin:15px 0;}
+.newsview .cont p {text-indent:2em;}
+@media(max-width:767px){.newsview {padding-top:60px; }}
